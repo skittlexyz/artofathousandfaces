@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Merriweather+Sans:wght@300;400;500;700&display=swap');
+/*
+font-family: 'Crimson Text', serif;
+font-family: 'Merriweather Sans', sans-serif;
+*/
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #eeeeee;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Crimson Text', serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("../assets/main-artworks/marcela-cantuaria/Uma proposta para o reencantamento.webp");
+    
+    background-size: cover;
+    background-position: center;
+}
+body::before {
+    background-color: rgba(0, 0, 0, 0.45);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+nav, section, footer {
+    z-index: 1;
+}
+nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav > a {
+    text-decoration: none;
+    font-size: 17px;
+    color: var(--secondary-color);
+}
+section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+section > div > h1 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 30px;
+    color: var(--primary-color);
+}
+section > div > p {
+    font-size: 22.5px;
+    color: var(--primary-color);
+}
+footer {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer > p {
+    color: var(--secondary-color);
+    font-size: 17px;
+}
