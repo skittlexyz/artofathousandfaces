@@ -1,3 +1,1 @@
-# Art of a Thousand Faces
-Galeria de Arte
-<hr>
+# Art of a Thousand Faces - Galeria de Arte
