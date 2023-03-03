@@ -4,31 +4,25 @@ font-family: 'Crimson Text', serif;
 font-family: 'Merriweather Sans', sans-serif;
 */
 :root {
-    --primary-color: #ffffff;
-    --secondary-color: #eeeeee;
+    --primary-color: #fdfdfd;
+    --secondary-color: #d1d1d1;
+    --background-overlay: linear-gradient(45deg, rgb(0, 0, 0, var(--white-overlay-opacity)), rgb(0, 0, 0, var(--white-overlay-opacity)));
+    --white-overlay-opacity: 0.6;
+    --button-color: #fdfdfd;
+    --button-text-color: #000;
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid #000; */
 }
 body {
     font-family: 'Crimson Text', serif;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-image: url("../assets/main-artworks/marcela-cantuaria/Uma proposta para o reencantamento.webp");
-    
-    background-size: cover;
-    background-position: center;
-}
-body::before {
-    background-color: rgba(0, 0, 0, 0.45);
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    width: 100%;
+    background-color: #000  ;
 }
 nav, section, footer {
     z-index: 1;
@@ -42,7 +36,7 @@ nav {
 nav > a {
     text-decoration: none;
     font-size: 17px;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 section {
     flex-grow: 1;
@@ -50,28 +44,55 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 }
-section > div {
+section > div#title-box {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
-section > div > h1 {
+section > div#title-box > h1 {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 30px;
     color: var(--primary-color);
 }
-section > div > p {
+section > div#title-box > p {
     font-size: 22.5px;
-    color: var(--primary-color);
+    color: var(--secondary-color);
+}
+section > div#paragraph-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 236px;
+    gap: 15px;
+    font-size: 16px;
+}
+section > div#paragraph-box > p {
+    text-align: left;
+    color: var(--secondary-color);
+}
+section > div#paragraph-box > button {
+    padding: 8px;
+    width: 100px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Crimson Text', serif;
+    font-size: inherit;
+    background-color: var(--button-color);
+    color: var(--button-text-color);
 }
 footer {
-    height: 50px;
+    height: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 footer > p {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-size: 17px;
+}
+footer > p > a {
+    text-decoration: underline;
+    color: inherit;
 }
