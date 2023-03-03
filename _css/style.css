@@ -4,12 +4,11 @@ font-family: 'Crimson Text', serif;
 font-family: 'Merriweather Sans', sans-serif;
 */
 :root {
-    --primary-color: #fdfdfd;
-    --secondary-color: #d1d1d1;
-    --background-overlay: linear-gradient(45deg, rgb(0, 0, 0, var(--white-overlay-opacity)), rgb(0, 0, 0, var(--white-overlay-opacity)));
-    --white-overlay-opacity: 0.6;
-    --button-color: #fdfdfd;
-    --button-text-color: #000;
+    --primary-color: #000000;
+    --secondary-color: #2e2e2e;
+    --button-color: #2e2e2e;
+    --button-text-color: #fff;
+    --background-color: #fff;
 }
 * {
     margin: 0;
@@ -22,7 +21,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: #000  ;
+    background-color: var(--background-color);
+    overflow: hidden;
 }
 nav, section, footer {
     z-index: 1;
@@ -46,21 +46,27 @@ section {
     align-items: center;
     gap: 30px;
 }
-section > div#title-box {
+section > #separator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section > #separator > div#title-box {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
-section > div#title-box > h1 {
-    font-family: 'Merriweather Sans', sans-serif;
-    font-size: 30px;
-    color: var(--primary-color);
+section > #separator > div#title-box > img#main-logo {
+    visibility: hidden;
+    width: 0;
+    height: 0;
 }
-section > div#title-box > p {
-    font-size: 22.5px;
-    color: var(--secondary-color);
+section > #separator > div#title-box > img#mobile-logo {
+    width: 260px;
+    margin-bottom: -15px;
 }
-section > div#paragraph-box {
+section > #separator > div#paragraph-box {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -68,11 +74,11 @@ section > div#paragraph-box {
     gap: 15px;
     font-size: 16px;
 }
-section > div#paragraph-box > p {
+section > #separator > div#paragraph-box > p {
     text-align: left;
     color: var(--secondary-color);
 }
-section > div#paragraph-box > button {
+section > #separator > div#paragraph-box > button {
     padding: 8px;
     width: 100px;
     border: none;
@@ -82,6 +88,14 @@ section > div#paragraph-box > button {
     background-color: var(--button-color);
     color: var(--button-text-color);
 }
+.background-images {
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
 footer {
     height: 40px;
     display: flex;
@@ -95,4 +109,39 @@ footer > p {
 footer > p > a {
     text-decoration: underline;
     color: inherit;
+}
+@media (min-width: 760px) {
+    section > #separator > div#title-box > img#main-logo {
+        visibility: visible;
+        width: 260px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    section > #separator > div#title-box > img#mobile-logo {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    section > #separator > div#paragraph-box {
+        width: 260px;
+    }
+    section > #separator > div#paragraph-box > p {
+        font-size: 17.5px;
+    }
+    section {
+        flex-direction: row;
+    }
+    #background-images-box {
+        width: 250px;
+        height: auto;
+    }
+    #first {
+        visibility: visible;
+        width: 325px;
+        height: auto;
+    }
+    nav {
+        justify-content: center;
+        gap: 100px;
+    }
 }
