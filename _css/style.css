@@ -89,6 +89,7 @@ section > #separator > div#paragraph-box > button {
     background-color: var(--button-color);
     color: var(--button-text-color);
     align-self: flex-end;
+    cursor: pointer;
 }
 .background-images {
     display: flex;

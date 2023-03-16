@@ -88,5 +88,80 @@
                 "title": "Todos os caminhos"
             }
         ]
+    },
+    {
+        "artist": "Wallace Pato",
+        "arts": [
+            {
+                "index": 0,
+                "href": "wallace-pato/na palma da mão.jpg",
+                "title": "Na palma da mão"
+            },
+            {
+                "index": 2,
+                "href": "wallace-pato/tenha piedade.jpg",
+                "title": "Tenha piedade"
+            },
+            {
+                "index": 3,
+                "href": "wallace-pato/Tiê tiê oia lá oxá",
+                "title": "Tiê tiê oia lá oxá"
+            },
+            {
+                "index": 4,
+                "href": "wallace-pato/Wallace Pato.jpg",
+                "title": "Wallace Pato"
+            }
+        ]
+    },
+    {
+        "artist": "Rafael Baron",
+        "arts": [
+            {
+                "index": 0,
+                "href": "rafael-baron/Alan.jpg",
+                "title": "Alan"
+            },
+            {
+                "index": 1,
+                "href": "rafael-baron/Carlos e Andrey.jpg",
+                "title": "Carlos e Andrey"
+            },
+            {
+                "index": 2,
+                "href": "rafael-baron/Davi.jpg",
+                "title": "Davi"
+            },
+            {
+                "index": 3,
+                "href": "rafael-baron/Maria das Dores e Gauguin",
+                "title": "Maria das Dores e Gauguin"
+            }
+        ]
+    },
+    {
+        "artist": "Elian Almeida",
+        "arts": [
+            {
+                "index": 0,
+                "href": "elian-almeida/Beatriz do Nascimento.webp",
+                "title": "Beatriz do Nascimento"
+            },
+            {
+                "index": 1,
+                "href": "elian-almeida/Mãe Beata do Iemanjá.webp",
+                "title": "Mãe Beata do Iemanjá"
+            },
+            {
+                "index": 2,
+                "href": "elian-almeida/Mercedes Batista.webp",
+                "title": "Mercedes Batista"
+            },
+            {
+                "index": 3,
+                "href": "elian-almeida/Tia Maria do Jongo.webp",
+                "title": "Tia Maria do Jongo"
+            }
+        ]
     }
 ]

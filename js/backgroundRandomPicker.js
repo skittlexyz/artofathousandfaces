@@ -1,3 +1,4 @@
+// Change DOM background to a random gradient and put a random image in the frame
 function backgroundRandomPicker() {
     backgroundImages = [
         document.querySelector('#first-background-image'),

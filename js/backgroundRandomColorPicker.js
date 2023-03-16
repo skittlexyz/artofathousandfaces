@@ -1,3 +1,4 @@
+// Change DOM background to a random gradient
 function backgroundRandomColorPicker() {
     backgroundColorStyles = [
         "background: linear-gradient(335deg, #ffffff, #d9d9d9) !important",

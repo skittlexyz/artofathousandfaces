@@ -44,3 +44,16 @@ section > .column > .art-card > p {
 section > .column > .art-card > img {
     width: 20vw;
 }
+#fullscreen-img {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
