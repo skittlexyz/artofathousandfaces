@@ -88,6 +88,7 @@ section > #separator > div#paragraph-box > button {
     font-size: inherit;
     background-color: var(--button-color);
     color: var(--button-text-color);
+    align-self: flex-end;
 }
 .background-images {
     display: flex;
@@ -145,5 +146,8 @@ footer > p > a {
     nav {
         justify-content: center;
         gap: 100px;
+    }
+    section > #separator > div#paragraph-box > button {
+        align-self: flex-start;
     }
 }
