@@ -57,3 +57,20 @@ section > .column > .art-card > img {
     background-position: center;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+@media (max-width: 600px) {
+    section {
+        grid-template-columns: repeat(2, 35vw);
+    }
+    section > .column > .art-card > img {
+        width: 35vw;
+    }
+}
+@media (max-width: 360px) {
+    section {
+        grid-template-columns: 80vw;
+    }
+    section > .column > .art-card > img {
+        width: 80vw;
+    }
+}
